@@ -49,7 +49,7 @@ class Book(DeclarativeBaseGuid):
     You can check a session has changes (new, deleted, changed objects) by getting the ``book.is_saved`` property.
     To save or cancel changes, use ``book.save()`` or ``book.cancel()``::
 
-        # save a session if it is no saved (saving a unchanged session is a no-op)
+        # save a session if it is not saved (saving a unchanged session is a no-op)
         if not book.is_saved:
             book.save()
 
